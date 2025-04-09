@@ -1,0 +1,1 @@
+C:\Users\a-kr\Ohjelmistotuotanto1\AlueetJaMokit\AlueetJaMokit.csproj;x64
