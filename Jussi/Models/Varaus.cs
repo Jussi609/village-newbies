@@ -50,6 +50,13 @@ namespace VillageNewbies.Models
         public DateTime VarausPvm { get; set; } = DateTime.Now;
 
         /// <summary>
+        /// Varauksen vahvistuspäivämäärä
+        /// </summary>
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? VahvistusPvm { get; set; }
+
+        /// <summary>
         /// Varauksen tila (Vahvistettu, Peruttu)
         /// </summary>
         [Required(ErrorMessage = "Tila on pakollinen")]

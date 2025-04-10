@@ -41,6 +41,13 @@ namespace VillageNewbies.Models
         public decimal Hinta { get; set; }
 
         /// <summary>
+        /// Palvelun arvonlisävero
+        /// </summary>
+        [Required(ErrorMessage = "ALV on pakollinen")]
+        [Range(0, 30.00, ErrorMessage = "ALV:n tulee olla välillä 0 - 30.00")]
+        public decimal Alv { get; set; } = 24.00m; // Oletuksena Suomen yleinen ALV-kanta
+
+        /// <summary>
         /// Palvelun tyyppi (esim. Safari, Vuokraus)
         /// </summary>
         [Required(ErrorMessage = "Tyyppi on pakollinen")]

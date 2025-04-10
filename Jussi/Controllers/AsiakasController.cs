@@ -110,7 +110,7 @@ namespace VillageNewbies.Controllers
                 // Tarkistetaan pakollisten tietojen olemassaolo
                 if (string.IsNullOrEmpty(asiakas.Etunimi) ||
                     string.IsNullOrEmpty(asiakas.Sukunimi) ||
-                    string.IsNullOrEmpty(asiakas.Osoite) ||
+                    string.IsNullOrEmpty(asiakas.Lahiosoite) ||
                     string.IsNullOrEmpty(asiakas.Postinumero) ||
                     string.IsNullOrEmpty(asiakas.Postitoimipaikka) ||
                     string.IsNullOrEmpty(asiakas.Puhelinnumero) ||
@@ -159,7 +159,7 @@ namespace VillageNewbies.Controllers
                 // Tarkistetaan pakollisten tietojen olemassaolo
                 if (string.IsNullOrEmpty(asiakas.Etunimi) ||
                     string.IsNullOrEmpty(asiakas.Sukunimi) ||
-                    string.IsNullOrEmpty(asiakas.Osoite) ||
+                    string.IsNullOrEmpty(asiakas.Lahiosoite) ||
                     string.IsNullOrEmpty(asiakas.Postinumero) ||
                     string.IsNullOrEmpty(asiakas.Postitoimipaikka) ||
                     string.IsNullOrEmpty(asiakas.Puhelinnumero) ||
@@ -192,7 +192,7 @@ namespace VillageNewbies.Controllers
                 // Päivitetään asiakkaan tiedot
                 paivitettavaAsiakas.Etunimi = asiakas.Etunimi;
                 paivitettavaAsiakas.Sukunimi = asiakas.Sukunimi;
-                paivitettavaAsiakas.Osoite = asiakas.Osoite;
+                paivitettavaAsiakas.Lahiosoite = asiakas.Lahiosoite;
                 paivitettavaAsiakas.Postinumero = asiakas.Postinumero;
                 paivitettavaAsiakas.Postitoimipaikka = asiakas.Postitoimipaikka;
                 paivitettavaAsiakas.Puhelinnumero = asiakas.Puhelinnumero;

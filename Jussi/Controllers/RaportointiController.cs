@@ -93,17 +93,20 @@ namespace VillageNewbies.Controllers
         }
 
         /// <summary>
-        /// Hakee palveluiden käyttöasteet tiettynä ajanjaksona
+        /// Hakee palveluiden käyttöasteet tiettynä ajanjaksona tietyllä alueella
         /// </summary>
         /// <param name="alkuPvm">Aikavälin alkupäivämäärä</param>
         /// <param name="loppuPvm">Aikavälin loppupäivämäärä</param>
+        /// <param name="alueId">Alueen ID (null = kaikki alueet)</param>
         /// <returns>Dictionary, jossa avaimena palvelun nimi ja arvona varausten määrä</returns>
-        public Dictionary<string, int> HaePalveluidenKayttoasteet(DateTime alkuPvm, DateTime loppuPvm)
+        public Dictionary<string, int> HaePalveluidenKayttoasteet(DateTime alkuPvm, DateTime loppuPvm, int? alueId = null)
         {
             try
             {
                 // Haetaan palveluiden tiedot
-                var palvelut = _context.Palvelut.ToList();
+                var palvelut = _context.Palvelut
+                    .Where(p => !alueId.HasValue || p.AlueID == alueId.Value)
+                    .ToList();
                 var tulokset = palvelut.ToDictionary(p => p.Nimi, p => 0);
 
                 // Haetaan varaukset aikavälillä
@@ -117,7 +120,8 @@ namespace VillageNewbies.Controllers
                     // Haetaan varausten palvelut ja niiden lukumäärät
                     var varaustenPalvelut = _context.VaraustenPalvelut
                         .Include(vp => vp.Palvelu)
-                        .Where(vp => varaukset.Contains(vp.VarausID))
+                        .Where(vp => varaukset.Contains(vp.VarausID) && 
+                               (!alueId.HasValue || vp.Palvelu.AlueID == alueId.Value))
                         .ToList();
 
                     // Lasketaan kunkin palvelun käyttökerrat
@@ -324,8 +328,9 @@ namespace VillageNewbies.Controllers
         /// <param name="alkuPvm">Aikavälin alkupäivämäärä</param>
         /// <param name="loppuPvm">Aikavälin loppupäivämäärä</param>
         /// <param name="maara">Palautettavien palveluiden määrä</param>
+        /// <param name="alueId">Alueen ID (null = kaikki alueet)</param>
         /// <returns>Lista palveluista käyttömäärän mukaan järjestettynä</returns>
-        public List<KeyValuePair<Palvelu, int>> HaeSuosituimmatPalvelut(DateTime alkuPvm, DateTime loppuPvm, int maara = 10)
+        public List<KeyValuePair<Palvelu, int>> HaeSuosituimmatPalvelut(DateTime alkuPvm, DateTime loppuPvm, int maara = 10, int? alueId = null)
         {
             try
             {
@@ -338,6 +343,7 @@ namespace VillageNewbies.Controllers
                 // Haetaan palvelut ja niihin liittyvät varausten palvelut
                 var palvelut = _context.Palvelut
                     .Include(p => p.Alue)
+                    .Where(p => !alueId.HasValue || p.AlueID == alueId.Value)
                     .ToList();
 
                 var varaustenPalvelut = _context.VaraustenPalvelut

@@ -33,7 +33,7 @@ namespace VillageNewbies.Models
         /// </summary>
         [Required(ErrorMessage = "Osoite on pakollinen")]
         [StringLength(200, ErrorMessage = "Osoite voi olla enintään 200 merkkiä pitkä")]
-        public string Osoite { get; set; }
+        public string Lahiosoite { get; set; }
 
         /// <summary>
         /// Asiakkaan postinumero (pakollinen)
@@ -104,6 +104,6 @@ namespace VillageNewbies.Models
         /// <summary>
         /// Palauttaa asiakkaan täyden osoitteen (osoite, postinumero, postitoimipaikka)
         /// </summary>
-        public string TaysiOsoite => $"{Osoite}, {Postinumero} {Postitoimipaikka}";
+        public string TaysiOsoite => $"{Lahiosoite}, {Postinumero} {Postitoimipaikka}";
     }
 } 
