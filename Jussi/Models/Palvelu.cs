@@ -1,67 +1,107 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace VillageNewbies.Models
 {
-    /// <summary>
-    /// Palvelu-luokka edustaa Village Newbies mökkivarausjärjestelmän palvelutietoja
-    /// </summary>
-    public class Palvelu
+    public class Palvelu : INotifyPropertyChanged
     {
-        /// <summary>
-        /// Palvelun yksilöivä tunniste
-        /// </summary>
-        public int PalveluID { get; set; }
+        private int _palvelu_id;
+        private int _alue_id;
+        private string _nimi;
+        private string _kuvaus;
+        private double _hinta;
+        private double _alv;
 
-        /// <summary>
-        /// Alueen ID, johon palvelu kuuluu
-        /// </summary>
-        [Required(ErrorMessage = "Alue on pakollinen")]
-        public int AlueID { get; set; }
+        public int Palvelu_id
+        {
+            get => _palvelu_id;
+            set
+            {
+                if (_palvelu_id != value)
+                {
+                    _palvelu_id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Palvelun nimi (pakollinen)
-        /// </summary>
-        [Required(ErrorMessage = "Nimi on pakollinen")]
-        [StringLength(100, ErrorMessage = "Nimi voi olla enintään 100 merkkiä pitkä")]
-        public string Nimi { get; set; }
+        public int Alue_id
+        {
+            get => _alue_id;
+            set
+            {
+                if (_alue_id != value)
+                {
+                    _alue_id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Palvelun kuvaus
-        /// </summary>
-        [StringLength(500, ErrorMessage = "Kuvaus voi olla enintään 500 merkkiä pitkä")]
-        public string Kuvaus { get; set; }
+        public string Nimi
+        {
+            get => _nimi;
+            set
+            {
+                if (_nimi != value)
+                {
+                    _nimi = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Palvelun hinta (pakollinen)
-        /// </summary>
-        [Required(ErrorMessage = "Hinta on pakollinen")]
-        [Range(0.01, 10000.00, ErrorMessage = "Hinnan tulee olla välillä 0.01 - 10000.00")]
-        public decimal Hinta { get; set; }
+        public string Kuvaus
+        {
+            get => _kuvaus;
+            set
+            {
+                if (_kuvaus != value)
+                {
+                    _kuvaus = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Palvelun arvonlisävero
-        /// </summary>
-        [Required(ErrorMessage = "ALV on pakollinen")]
-        [Range(0, 30.00, ErrorMessage = "ALV:n tulee olla välillä 0 - 30.00")]
-        public decimal Alv { get; set; } = 24.00m; // Oletuksena Suomen yleinen ALV-kanta
+        public double Hinta
+        {
+            get => _hinta;
+            set
+            {
+                if (_hinta != value)
+                {
+                    _hinta = value;
+                    OnPropertyChanged();
+                    OnPropertyChanged(nameof(HintaSisaltaaALV));
+                }
+            }
+        }
 
-        /// <summary>
-        /// Palvelun tyyppi (esim. Safari, Vuokraus)
-        /// </summary>
-        [Required(ErrorMessage = "Tyyppi on pakollinen")]
-        [StringLength(100, ErrorMessage = "Tyyppi voi olla enintään 100 merkkiä pitkä")]
-        public string Tyyppi { get; set; }
+        public double Alv
+        {
+            get => _alv;
+            set
+            {
+                if (_alv != value)
+                {
+                    _alv = value;
+                    OnPropertyChanged();
+                    OnPropertyChanged(nameof(HintaSisaltaaALV));
+                }
+            }
+        }
 
-        /// <summary>
-        /// Viittaus Alue-olioon (navigointiominaisuus)
-        /// </summary>
-        public virtual Alue Alue { get; set; }
+        // Lasketaan hinta sisältäen ALV
+        public double HintaSisaltaaALV => Hinta * (1 + Alv / 100);
 
-        /// <summary>
-        /// Lista varauksista, joissa palvelu on käytössä (navigointiominaisuus)
-        /// </summary>
-        public virtual ICollection<VarauksenPalvelu> VarauksenPalvelut { get; set; } = new List<VarauksenPalvelu>();
+        // INotifyPropertyChanged toteutus
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 } 

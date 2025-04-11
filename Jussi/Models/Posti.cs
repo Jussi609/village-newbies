@@ -4,46 +4,32 @@ using System.Runtime.CompilerServices;
 
 namespace VillageNewbies.Models
 {
-    public class VarauksenPalvelu : INotifyPropertyChanged
+    public class Posti : INotifyPropertyChanged
     {
-        private int _varaus_id;
-        private int _palvelu_id;
-        private int _lkm;
+        private string _postinro;
+        private string _toimipaikka;
 
-        public int Varaus_id
+        public string Postinro
         {
-            get => _varaus_id;
+            get => _postinro;
             set
             {
-                if (_varaus_id != value)
+                if (_postinro != value)
                 {
-                    _varaus_id = value;
+                    _postinro = value;
                     OnPropertyChanged();
                 }
             }
         }
 
-        public int Palvelu_id
+        public string Toimipaikka
         {
-            get => _palvelu_id;
+            get => _toimipaikka;
             set
             {
-                if (_palvelu_id != value)
+                if (_toimipaikka != value)
                 {
-                    _palvelu_id = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        public int Lkm
-        {
-            get => _lkm;
-            set
-            {
-                if (_lkm != value)
-                {
-                    _lkm = value;
+                    _toimipaikka = value;
                     OnPropertyChanged();
                 }
             }

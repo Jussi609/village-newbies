@@ -1,97 +1,119 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace VillageNewbies.Models
 {
-    /// <summary>
-    /// Varaus-luokka edustaa Village Newbies mökkivarausjärjestelmän varaustietoja
-    /// </summary>
-    public class Varaus
+    public class Varaus : INotifyPropertyChanged
     {
-        /// <summary>
-        /// Varauksen yksilöivä tunniste
-        /// </summary>
-        public int VarausID { get; set; }
+        private int _varaus_id;
+        private int _asiakas_id;
+        private int _mokki_id;
+        private DateTime _varattu_pvm;
+        private DateTime? _vahvistus_pvm;
+        private DateTime _varattu_alkupvm;
+        private DateTime _varattu_loppupvm;
 
-        /// <summary>
-        /// Asiakkaan ID
-        /// </summary>
-        [Required(ErrorMessage = "Asiakas on pakollinen")]
-        public int AsiakasID { get; set; }
+        public int Varaus_id
+        {
+            get => _varaus_id;
+            set
+            {
+                if (_varaus_id != value)
+                {
+                    _varaus_id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Mökin ID
-        /// </summary>
-        [Required(ErrorMessage = "Mökki on pakollinen")]
-        public int MokkiID { get; set; }
+        public int Asiakas_id
+        {
+            get => _asiakas_id;
+            set
+            {
+                if (_asiakas_id != value)
+                {
+                    _asiakas_id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Varauksen alkupäivä (pakollinen)
-        /// </summary>
-        [Required(ErrorMessage = "Alkupäivä on pakollinen")]
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime AlkuPvm { get; set; }
+        public int Mokki_id
+        {
+            get => _mokki_id;
+            set
+            {
+                if (_mokki_id != value)
+                {
+                    _mokki_id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Varauksen loppupäivä (pakollinen)
-        /// </summary>
-        [Required(ErrorMessage = "Loppupäivä on pakollinen")]
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime LoppuPvm { get; set; }
+        public DateTime Varattu_pvm
+        {
+            get => _varattu_pvm;
+            set
+            {
+                if (_varattu_pvm != value)
+                {
+                    _varattu_pvm = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Varauksen tekopäivä
-        /// </summary>
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime VarausPvm { get; set; } = DateTime.Now;
+        public DateTime? Vahvistus_pvm
+        {
+            get => _vahvistus_pvm;
+            set
+            {
+                if (_vahvistus_pvm != value)
+                {
+                    _vahvistus_pvm = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Varauksen vahvistuspäivämäärä
-        /// </summary>
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime? VahvistusPvm { get; set; }
+        public DateTime Varattu_alkupvm
+        {
+            get => _varattu_alkupvm;
+            set
+            {
+                if (_varattu_alkupvm != value)
+                {
+                    _varattu_alkupvm = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Varauksen tila (Vahvistettu, Peruttu)
-        /// </summary>
-        [Required(ErrorMessage = "Tila on pakollinen")]
-        [StringLength(20, ErrorMessage = "Tila voi olla enintään 20 merkkiä pitkä")]
-        public string Tila { get; set; } = "Vahvistettu";
+        public DateTime Varattu_loppupvm
+        {
+            get => _varattu_loppupvm;
+            set
+            {
+                if (_varattu_loppupvm != value)
+                {
+                    _varattu_loppupvm = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Varauksen lisätiedot
-        /// </summary>
-        [StringLength(500, ErrorMessage = "Lisätiedot voivat olla enintään 500 merkkiä pitkä")]
-        public string Lisatiedot { get; set; }
+        // Varauksen kesto päivinä
+        public int VarauksenKestoPaivina => (Varattu_loppupvm - Varattu_alkupvm).Days + 1;
 
-        /// <summary>
-        /// Viittaus Asiakas-olioon (navigointiominaisuus)
-        /// </summary>
-        public virtual Asiakas Asiakas { get; set; }
+        // INotifyPropertyChanged toteutus
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        /// <summary>
-        /// Viittaus Mokki-olioon (navigointiominaisuus)
-        /// </summary>
-        public virtual Mokki Mokki { get; set; }
-
-        /// <summary>
-        /// Lista varaukseen liittyvistä palveluista (navigointiominaisuus)
-        /// </summary>
-        public virtual ICollection<VarauksenPalvelu> VarauksenPalvelut { get; set; } = new List<VarauksenPalvelu>();
-
-        /// <summary>
-        /// Laskee varauksen keston vuorokausina
-        /// </summary>
-        public int KestoVrk => (LoppuPvm - AlkuPvm).Days;
-
-        /// <summary>
-        /// Laskee varauksen mökin hinnan ilman palveluita
-        /// </summary>
-        public decimal MokkiHinta => (Mokki != null) ? Mokki.Hinta * KestoVrk : 0;
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 } 

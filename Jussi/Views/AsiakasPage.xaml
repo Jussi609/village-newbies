@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:VillageNewbies.ViewModels"
+             xmlns:models="clr-namespace:VillageNewbies.Models"
+             x:Class="VillageNewbies.Views.AsiakasPage"
+             Title="Asiakashallinta">
+
+    <ContentPage.BindingContext>
+        <viewmodels:AsiakasViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="Auto,Auto,*" ColumnDefinitions="*,*" Padding="10" RowSpacing="10" ColumnSpacing="10">
+        
+        <!-- Hakuosio -->
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" ColumnDefinitions="*,Auto" Margin="0,0,0,10">
+            <Entry Grid.Column="0" Placeholder="Hae asiakkaita..." Text="{Binding Hakusana}" />
+            <Button Grid.Column="1" Text="Hae" Command="{Binding HaeAsiakkaatHakusanallaCommand}" Margin="5,0,0,0" />
+        </Grid>
+        
+        <!-- Asiakastaulukko -->
+        <Frame Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" BorderColor="Gray" HasShadow="True" Padding="5">
+            <Grid RowDefinitions="Auto,*">
+                <Label Grid.Row="0" Text="Asiakkaat" FontSize="18" FontAttributes="Bold" Margin="0,0,0,10" />
+                <ListView Grid.Row="1" ItemsSource="{Binding Asiakkaat}" SelectedItem="{Binding ValittuAsiakas}" HasUnevenRows="True" SelectionMode="Single">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Asiakas">
+                            <ViewCell>
+                                <Grid Padding="10" RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto">
+                                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding KokoNimi}" FontAttributes="Bold" />
+                                    <Label Grid.Row="1" Grid.Column="0" Text="{Binding Email}" FontSize="Small" />
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Puhelinnumero}" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Frame>
+        
+        <!-- Asiakkaan tiedot -lomake -->
+        <Frame Grid.Row="1" Grid.Column="1" BorderColor="Gray" HasShadow="True" Padding="10">
+            <ScrollView>
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Asiakkaan tiedot" FontSize="18" FontAttributes="Bold" />
+                    
+                    <Label Text="Etunimi" />
+                    <Entry Text="{Binding UusiAsiakas.Etunimi}" Placeholder="Etunimi" />
+                    
+                    <Label Text="Sukunimi" />
+                    <Entry Text="{Binding UusiAsiakas.Sukunimi}" Placeholder="Sukunimi" />
+                    
+                    <Label Text="Lähiosoite" />
+                    <Entry Text="{Binding UusiAsiakas.Lahiosoite}" Placeholder="Lähiosoite" />
+                    
+                    <Label Text="Postinumero" />
+                    <Entry Text="{Binding UusiAsiakas.Postinumero}" Placeholder="Postinumero" MaxLength="5" />
+                    
+                    <Label Text="Sähköposti" />
+                    <Entry Text="{Binding UusiAsiakas.Email}" Placeholder="Sähköposti" Keyboard="Email" />
+                    
+                    <Label Text="Puhelinnumero" />
+                    <Entry Text="{Binding UusiAsiakas.Puhelinnumero}" Placeholder="Puhelinnumero" Keyboard="Telephone" />
+                    
+                    <Label Text="{Binding VirheViesti}" TextColor="Red" IsVisible="{Binding VirheViesti, Converter={StaticResource StringToBoolConverter}}" />
+                    
+                    <Label Text="Tallennettu onnistuneesti!" TextColor="Green" IsVisible="{Binding OnTallennettu}" />
+                </VerticalStackLayout>
+            </ScrollView>
+        </Frame>
+        
+        <!-- Toimintonapit -->
+        <VerticalStackLayout Grid.Row="2" Grid.Column="1" Spacing="10">
+            <Button Text="Lisää uusi asiakas" Command="{Binding LisaaAsiakasCommand}" 
+                    BackgroundColor="#4CAF50" TextColor="White" />
+            
+            <Button Text="Tallenna muutokset" Command="{Binding MuokkaaAsiakasCommand}" 
+                    BackgroundColor="#2196F3" TextColor="White" 
+                    IsEnabled="{Binding ValittuAsiakas, Converter={StaticResource NotNullToBoolConverter}}" />
+            
+            <Button Text="Poista asiakas" Command="{Binding PoistaAsiakasCommand}" 
+                    BackgroundColor="#F44336" TextColor="White" 
+                    IsEnabled="{Binding ValittuAsiakas, Converter={StaticResource NotNullToBoolConverter}}" />
+            
+            <Button Text="Tyhjennä lomake" Command="{Binding TyhjennaLomakeCommand}" />
+        </VerticalStackLayout>
+        
+        <!-- Latausindikaattori -->
+        <ActivityIndicator Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="2" 
+                           IsRunning="{Binding Lataa}" IsVisible="{Binding Lataa}" 
+                           HorizontalOptions="Center" VerticalOptions="Center" />
+    </Grid>
+</ContentPage> 

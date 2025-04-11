@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="VillageNewbies.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:VillageNewbies"
+    xmlns:views="clr-namespace:VillageNewbies.Views"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Village Newbies">
+
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="{StaticResource Primary}" Padding="20">
+            <Label Text="Village Newbies" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+        </Grid>
+    </Shell.FlyoutHeader>
+    
+    <FlyoutItem Title="Asiakashallinta" Icon="user.png">
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:AsiakasPage}" 
+            Route="asiakashallinta" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Palveluraportit" Icon="report.png">
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:PalveluRaporttiPage}" 
+            Route="palveluraportit" />
+    </FlyoutItem>
+
+    <!-- Tähän voidaan jatkossa lisätä muita varausjärjestelmän osia -->
+    
+</Shell> 

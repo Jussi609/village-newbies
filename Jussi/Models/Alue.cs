@@ -1,46 +1,46 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace VillageNewbies.Models
 {
-    /// <summary>
-    /// Alue-luokka edustaa Village Newbies mökkivarausjärjestelmän aluetietoja
-    /// </summary>
-    public class Alue
+    public class Alue : INotifyPropertyChanged
     {
-        /// <summary>
-        /// Alueen yksilöivä tunniste
-        /// </summary>
-        public int AlueID { get; set; }
+        private int _alue_id;
+        private string _nimi;
 
-        /// <summary>
-        /// Alueen nimi (pakollinen)
-        /// </summary>
-        [Required(ErrorMessage = "Nimi on pakollinen")]
-        [StringLength(100, ErrorMessage = "Nimi voi olla enintään 100 merkkiä pitkä")]
-        public string Nimi { get; set; }
+        public int Alue_id
+        {
+            get => _alue_id;
+            set
+            {
+                if (_alue_id != value)
+                {
+                    _alue_id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Alueen kuvaus
-        /// </summary>
-        [StringLength(500, ErrorMessage = "Kuvaus voi olla enintään 500 merkkiä pitkä")]
-        public string Kuvaus { get; set; }
+        public string Nimi
+        {
+            get => _nimi;
+            set
+            {
+                if (_nimi != value)
+                {
+                    _nimi = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        /// <summary>
-        /// Alueen sijainti
-        /// </summary>
-        [StringLength(200, ErrorMessage = "Sijainti voi olla enintään 200 merkkiä pitkä")]
-        public string Sijainti { get; set; }
+        // INotifyPropertyChanged toteutus
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        /// <summary>
-        /// Lista alueella olevista mökeistä (navigointiominaisuus)
-        /// </summary>
-        public virtual ICollection<Mokki> Mokit { get; set; } = new List<Mokki>();
-
-        /// <summary>
-        /// Lista alueella tarjottavista palveluista (navigointiominaisuus)
-        /// </summary>
-        public virtual ICollection<Palvelu> Palvelut { get; set; } = new List<Palvelu>();
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 } 
