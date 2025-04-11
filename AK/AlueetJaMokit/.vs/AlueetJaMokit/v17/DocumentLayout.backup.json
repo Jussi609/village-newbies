@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\",
+  "WorkspaceRootPath": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\ohjelmistotuotanto1\\alueetjamokit\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\ohjelmistotuotanto1\\alueetjamokit\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\onedrive\\desktop\\ohjelmistotuotanto\\githubprojekti\\village-newbies\\ak\\alueetjamokit\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\ohjelmistotuotanto1\\alueetjamokit\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\onedrive\\desktop\\ohjelmistotuotanto\\githubprojekti\\village-newbies\\ak\\alueetjamokit\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\onedrive\\desktop\\ohjelmistotuotanto\\githubprojekti\\village-newbies\\ak\\alueetjamokit\\databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|solutionrelative:databaseconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\ohjelmistotuotanto1\\alueetjamokit\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\onedrive\\desktop\\ohjelmistotuotanto\\githubprojekti\\village-newbies\\ak\\alueetjamokit\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|solutionrelative:databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\ohjelmistotuotanto1\\alueetjamokit\\mokki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\onedrive\\desktop\\ohjelmistotuotanto\\githubprojekti\\village-newbies\\ak\\alueetjamokit\\mokki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|solutionrelative:mokki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\ohjelmistotuotanto1\\alueetjamokit\\alue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|c:\\users\\a-kr\\onedrive\\desktop\\ohjelmistotuotanto\\githubprojekti\\village-newbies\\ak\\alueetjamokit\\alue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82AA0DF6-B479-4A8E-848C-746D8C957BFB}|AlueetJaMokit.csproj|solutionrelative:alue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,43 +34,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "DatabaseConnector.cs",
-              "DocumentMoniker": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\DatabaseConnector.cs",
+              "DocumentMoniker": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\DatabaseConnector.cs",
               "RelativeDocumentMoniker": "DatabaseConnector.cs",
-              "ToolTip": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\DatabaseConnector.cs*",
-              "RelativeToolTip": "DatabaseConnector.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvxwAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\DatabaseConnector.cs",
+              "RelativeToolTip": "DatabaseConnector.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAiwEkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T05:42:26.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\MainPage.xaml.cs*",
-              "RelativeToolTip": "MainPage.xaml.cs*",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAwwIkAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAiwFkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T22:27:35.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\MainPage.xaml*",
-              "RelativeToolTip": "MainPage.xaml*",
-              "ViewState": "AgIAAAMAAAAAAAAAAADgvwkAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-03T22:26:35.526Z",
               "EditorCaption": ""
@@ -79,11 +79,11 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DatabaseService.cs",
-              "DocumentMoniker": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\DatabaseService.cs",
               "RelativeDocumentMoniker": "DatabaseService.cs",
-              "ToolTip": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\DatabaseService.cs",
               "RelativeToolTip": "DatabaseService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAvwAsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAEwAsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T06:30:24.65Z",
               "EditorCaption": ""
@@ -92,9 +92,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Mokki.cs",
-              "DocumentMoniker": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\Mokki.cs",
+              "DocumentMoniker": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\Mokki.cs",
               "RelativeDocumentMoniker": "Mokki.cs",
-              "ToolTip": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\Mokki.cs",
+              "ToolTip": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\Mokki.cs",
               "RelativeToolTip": "Mokki.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAwwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -104,9 +104,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Alue.cs",
-              "DocumentMoniker": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\Alue.cs",
+              "DocumentMoniker": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\Alue.cs",
               "RelativeDocumentMoniker": "Alue.cs",
-              "ToolTip": "C:\\Users\\a-kr\\Ohjelmistotuotanto1\\AlueetJaMokit\\Alue.cs",
+              "ToolTip": "C:\\Users\\a-kr\\OneDrive\\Desktop\\Ohjelmistotuotanto\\GitHUBprojekti\\village-newbies\\AK\\AlueetJaMokit\\Alue.cs",
               "RelativeToolTip": "Alue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

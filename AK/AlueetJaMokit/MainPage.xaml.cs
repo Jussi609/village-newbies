@@ -16,19 +16,13 @@ namespace AlueetJaMokit
         {
             InitializeComponent();
             BindingContext = this;
-
-
-
-
         }
 
 
+        //ALUEET
 
-
-
-
-
-        private void LisaaAlue_Clicked(object sender, EventArgs e)
+        //Alueiden lisääminen napin avulla
+        private async void LisaaAlue_Clicked(object sender, EventArgs e)
         {
             var uusiAlue = new Alue
             {
@@ -38,20 +32,53 @@ namespace AlueetJaMokit
             seuraavaAlueID++;
 
             alueet.Add(uusiAlue);
-        }
 
-
-        private void PoistaAlue_Clicked(object sender, EventArgs e)
-        {
-            if (sender is Button button && button.CommandParameter is Alue valittuAlue)
+            try
             {
-                alueet.Remove(valittuAlue);
+                DatabaseConnector dbc = new DatabaseConnector();
+                dbc.TallennaAlueTietokantaan(uusiAlue);
+                await DisplayAlert("Onnistui", $"Alue '{uusiAlue.Nimi}' tallennettu tietokantaan.", "OK");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("VIRHE!", $"Tietokantaan tallennus epäonnistui: {ex.Message}", "OK");
             }
         }
 
 
 
-        private void MuokkaaAlueNimea_Clicked(object sender, EventArgs e)
+
+        //Alueiden poistaminen napin avulla
+        private async void PoistaAlue_Clicked(object sender, EventArgs e)
+        {
+            if (sender is Button button && button.CommandParameter is Alue valittuAlue)
+            {
+                bool vahvistus = await DisplayAlert("Vahvista", $"Haluatko varmasti poistaa alueen '{valittuAlue.Nimi}'?", "Kyllä", "Peruuta");
+
+                if (vahvistus)
+                {
+                    alueet.Remove(valittuAlue);
+
+                    try
+                    {
+                        DatabaseConnector dbc = new DatabaseConnector();
+                        dbc.PoistaAlueTietokannasta(valittuAlue.AlueId);
+
+                        await DisplayAlert("Onnistui", $"Alue '{valittuAlue.Nimi}' poistettu tietokannasta.", "OK");
+                    }
+                    catch (Exception ex)
+                    {
+                        await DisplayAlert("Virhe", $"Alueen poistaminen epäonnistui: {ex.Message}", "OK");
+                    }
+                }
+            }
+        }
+
+
+
+
+        //Alueiden nimen muokkaaminen ja uuden nimen päivittäminen tietokantaan
+        private async void MuokkaaAlueNimea_Clicked(object sender, EventArgs e)
         {
             if (sender is Button button &&
                 button.CommandParameter is Alue valittuAlue &&
@@ -62,13 +89,35 @@ namespace AlueetJaMokit
                     if (child is Entry entry && !string.IsNullOrWhiteSpace(entry.Text))
                     {
                         valittuAlue.Nimi = entry.Text;
+                        
+
+                        try
+                        {
+                            DatabaseConnector dbc = new DatabaseConnector();
+                            dbc.PaivitaAlueTietokantaan(valittuAlue);
+
+                            await DisplayAlert("Onnistui", $"Alueen nimi päivitetty tietokantaan.", "OK");
+                        }
+                        catch (Exception ex)
+                        {
+                            await DisplayAlert("Virhe", $"Alueen nimen päivitys epäonnistui: {ex.Message}", "OK");
+                        }
                         break;
                     }
                 }
             }
         }
 
+
+
+
+        //MÖKIT
+
+
         private int seuraavaMokkiId = 1;
+
+
+        //Mökkien lisääminen tietokantaan napin avulla
         private void LisaaMokki_Clicked(object sender, EventArgs e)
         {
             if (sender is Button button && button.CommandParameter is Alue alue)

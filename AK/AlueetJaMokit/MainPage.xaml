@@ -2,64 +2,76 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AlueetJaMokit.MainPage"
-             BackgroundColor="Pink">
+             BackgroundColor="DarkOliveGreen">
 
+    
     <ScrollView>
         <VerticalStackLayout Padding="20">
 
+            <!-- Tietokantayhteyden onnistumisen testaus -->
+            <Button x:Name="DatabaseBtn"
+                    BorderWidth="5"
+                    BorderColor="DarkOliveGreen"
+                    Text="Testaa tietokantayhteys"
+                    Clicked="OnDatabaseClicked"
+                    HorizontalOptions="Fill"
+                    BackgroundColor="Gray"/>
+
+
+
+
+            <!-- Alueiden lisääminen -->
             
-            <Button
-    x:Name="DatabaseBtn"
-    Text="Testaa tietokantayhteys"
-    Clicked="OnDatabaseClicked"
-    HorizontalOptions="Fill" />
-
-
-
             <Button Text="Lisää uusi alue" 
                     BorderWidth="5"
+                    BorderColor="DarkOliveGreen"
                     Clicked="LisaaAlue_Clicked" 
-                    BackgroundColor="BlueViolet"/>
+                    BackgroundColor="DarkSlateGray"/>
 
             <CollectionView ItemsSource="{Binding Alueet}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="Pink" Margin="5" Padding="10" >
-                            <VerticalStackLayout Padding="20">
+                        <Frame BorderColor="DarkOliveGreen" Margin="5" Padding="20" >
+                            <VerticalStackLayout Padding="10" >
 
                                 
-                                <Label Text="{Binding Nimi}" FontSize="18" />
+                                <Label Text="{Binding Nimi}" FontSize="20" />
 
+                                <!-- Alueiden tietojen muokkaaminen -->
                                 <HorizontalStackLayout >
                                     <Entry Placeholder="Uusi nimi"
-                                           TextColor="Black"
-                                           BackgroundColor="WhiteSmoke"
-                                             x:Name="nimiEntry" />
+                                            TextColor="Black"
+                                            BackgroundColor="WhiteSmoke"
+                                            x:Name="nimiEntry" />
                                     
                                     
                                     <Button Text="Tallenna alueen nimi"
                                             BorderWidth="5"
-                                Clicked="MuokkaaAlueNimea_Clicked"
-                                CommandParameter="{Binding}"
-                                            BackgroundColor="BlueViolet"/>
+                                            BorderColor="Black"
+                                            Clicked="MuokkaaAlueNimea_Clicked"
+                                            CommandParameter="{Binding}"
+                                            BackgroundColor="DarkSlateGray"/>
                                 
                                     
                                     <Button Text="Poista alue"
-                                        BorderWidth="5"
-                            Clicked="PoistaAlue_Clicked"
-                            CommandParameter="{Binding}" 
-                                            BackgroundColor="BlueViolet"/>
+                                            BorderWidth="5"
+                                            BorderColor="Black"
+                                            Clicked="PoistaAlue_Clicked"
+                                            CommandParameter="{Binding}" 
+                                            BackgroundColor="LightSlateGray"/>
+                                    
                                 </HorizontalStackLayout>
 
 
-                                
-                                
-                                
-                                
+
+
+                                <!-- Mökkien lisääminen alueeseen -->
+
                                 <Button Text="Lisää mökki"
                                         BorderWidth="5"
-                                 Clicked="LisaaMokki_Clicked"
-                                 CommandParameter="{Binding}"
+                                        BorderColor="Black"
+                                        Clicked="LisaaMokki_Clicked"
+                                        CommandParameter="{Binding}"
                                         BackgroundColor="ForestGreen"/>
                                 
                                 <CollectionView ItemsSource="{Binding Mokit}">
@@ -67,9 +79,9 @@
                                         <DataTemplate>
                                             <Frame BorderColor="DarkGray" Padding="5" Margin="5" >
                                                 <VerticalStackLayout Padding="10">
-                                                    <Label Text="{Binding Mokkinimi}" />
+                                                    <Label Text="{Binding Mokkinimi}" FontSize="20" Margin="5"/>
 
-
+                                                    <!-- Mökin tiedot -->
                                                     <Entry Text="{Binding Mokkinimi}" Placeholder="Mökin nimi" />
                                                     <Entry Text="{Binding Postinumero}" Placeholder="Postinumero" />
                                                     <Entry Text="{Binding Katuosoite}" Placeholder="Katuosoite" />
@@ -79,17 +91,21 @@
                                                     <Entry Text="{Binding Varustelu}" Placeholder="Varustelu" />
 
 
-                                                    <Button Text="Tallenna tiedot"
-                                                          Clicked="TallennaMokki_Clicked"
+                                                    <!-- Mökin tietojen muokkaaminen -->
+                                                    <Button Text="Tallenna mökin tiedot"
+                                                            BorderWidth="5"
+                                                            BorderColor="Black"
+                                                            Clicked="TallennaMokki_Clicked"
                                                             BackgroundColor="ForestGreen"
-                                                             CommandParameter="{Binding}" />
+                                                            CommandParameter="{Binding}" />
                                                     
                                                     
                                                     <Button Text="Poista mökki"
                                                             BorderWidth="5"
-                                                          Clicked="PoistaMokki_Clicked"
-                                                         CommandParameter="{Binding}"
-                                                            BackgroundColor="ForestGreen"/>
+                                                            BorderColor="Black"
+                                                            Clicked="PoistaMokki_Clicked"
+                                                            CommandParameter="{Binding}"
+                                                            BackgroundColor="LightSlateGray"/>
                                                     
                                                     
                                                 </VerticalStackLayout>

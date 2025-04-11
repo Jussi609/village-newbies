@@ -1,1 +1,1 @@
-C:\Users\a-kr\Ohjelmistotuotanto1\AlueetJaMokit\AlueetJaMokit.csproj;x64
+C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\AlueetJaMokit.csproj;x64
