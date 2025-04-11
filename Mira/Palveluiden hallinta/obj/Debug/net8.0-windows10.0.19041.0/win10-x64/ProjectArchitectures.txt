@@ -1,0 +1,1 @@
+C:\Users\MiraN\source\repos\Palveluiden hallinta\Palveluiden hallinta.csproj;x64
