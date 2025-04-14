@@ -1,128 +1,230 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="AlueetJaMokit.MainPage"
              BackgroundColor="DarkOliveGreen">
 
-    
-    <ScrollView>
-        <VerticalStackLayout Padding="20">
+
+    <!-- VASEN PUOLI NÄKYMÄSSÄ -->
+    <Grid ColumnDefinitions="1*, 2*" RowDefinitions="*">
+        
+        <VerticalStackLayout Padding="20" Grid.Column="0" BackgroundColor="DarkOliveGreen" Spacing="5">
+
 
             <!-- Tietokantayhteyden onnistumisen testaus -->
+            <!-- Tämä poistuu lopullisesta versiosta -->
             <Button x:Name="DatabaseBtn"
-                    BorderWidth="5"
-                    BorderColor="DarkOliveGreen"
-                    Text="Testaa tietokantayhteys"
-                    Clicked="OnDatabaseClicked"
-                    HorizontalOptions="Fill"
-                    BackgroundColor="Gray"/>
-
+        BorderWidth="5"
+        BorderColor="DarkOliveGreen"
+        Text="Testaa tietokantayhteys"
+        Clicked="OnDatabaseClicked"
+        HorizontalOptions="Fill"
+        BackgroundColor="Gray"/>
 
 
 
             <!-- Alueiden lisääminen -->
-            
+
             <Button Text="Lisää uusi alue" 
                     BorderWidth="5"
                     BorderColor="DarkOliveGreen"
                     Clicked="LisaaAlue_Clicked" 
                     BackgroundColor="DarkSlateGray"/>
 
-            <CollectionView ItemsSource="{Binding Alueet}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame BorderColor="DarkOliveGreen" Margin="5" Padding="20" >
-                            <VerticalStackLayout Padding="10" >
+                    
 
-                                
-                                <Label Text="{Binding Nimi}" FontSize="20" />
+            <!-- Hakukentän tiedot -->
 
-                                <!-- Alueiden tietojen muokkaaminen -->
-                                <HorizontalStackLayout >
-                                    <Entry Placeholder="Uusi nimi"
-                                            TextColor="Black"
-                                            BackgroundColor="WhiteSmoke"
-                                            x:Name="nimiEntry" />
-                                    
-                                    
-                                    <Button Text="Tallenna alueen nimi"
-                                            BorderWidth="5"
-                                            BorderColor="Black"
-                                            Clicked="MuokkaaAlueNimea_Clicked"
-                                            CommandParameter="{Binding}"
-                                            BackgroundColor="DarkSlateGray"/>
-                                
-                                    
-                                    <Button Text="Poista alue"
-                                            BorderWidth="5"
-                                            BorderColor="Black"
-                                            Clicked="PoistaAlue_Clicked"
-                                            CommandParameter="{Binding}" 
-                                            BackgroundColor="LightSlateGray"/>
-                                    
-                                </HorizontalStackLayout>
+            <Entry x:Name="AlueHakuEntry"
+                   Placeholder="Hae aluetta nimellä"
+                   PlaceholderColor="Black"
+                   BackgroundColor="Azure"
+                   TextColor="Black" />
 
 
+            <Entry x:Name="MokkiHakuEntry"
+                   Placeholder="Etsi mökin nimellä"
+                   PlaceholderColor="Black"
+                   BackgroundColor="Azure"
+                   TextColor="Black" />
+
+            <Entry x:Name="PostiHakuEntry"
+                   Placeholder="Etsi postinumerolla"
+                   PlaceholderColor="Black"
+                   BackgroundColor="Azure"
+                   TextColor="Black" />
+
+            <Entry x:Name="OsoiteHakuEntry"
+                   Placeholder="Etsi osoitteella"
+                   PlaceholderColor="Black"
+                   BackgroundColor="Azure"
+                   TextColor="Black" />
+
+            <Button Text="Hae"
+                    Clicked="HaeKaikki_Clicked"
+                    BackgroundColor="Black"
+                    TextColor="Azure" />
 
 
-                                <!-- Mökkien lisääminen alueeseen -->
+            <Button Text="Tyhjennä"
+                    Clicked="TyhjennaHaku_Clicked"
+                    BackgroundColor="Azure"
+                    TextColor="Black"/>
 
-                                <Button Text="Lisää mökki"
-                                        BorderWidth="5"
-                                        BorderColor="Black"
-                                        Clicked="LisaaMokki_Clicked"
-                                        CommandParameter="{Binding}"
-                                        BackgroundColor="ForestGreen"/>
-                                
-                                <CollectionView ItemsSource="{Binding Mokit}">
-                                    <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <Frame BorderColor="DarkGray" Padding="5" Margin="5" >
-                                                <VerticalStackLayout Padding="10">
-                                                    <Label Text="{Binding Mokkinimi}" FontSize="20" Margin="5"/>
-
-                                                    <!-- Mökin tiedot -->
-                                                    <Entry Text="{Binding Mokkinimi}" Placeholder="Mökin nimi" />
-                                                    <Entry Text="{Binding Postinumero}" Placeholder="Postinumero" />
-                                                    <Entry Text="{Binding Katuosoite}" Placeholder="Katuosoite" />
-                                                    <Entry Text="{Binding Hinta}" Placeholder="Hinta" Keyboard="Numeric" />
-                                                    <Entry Text="{Binding Kuvaus}" Placeholder="Kuvaus" />
-                                                    <Entry Text="{Binding Henkilomaara}" Placeholder="Henkilömäärä" Keyboard="Numeric" />
-                                                    <Entry Text="{Binding Varustelu}" Placeholder="Varustelu" />
+      </VerticalStackLayout>
 
 
-                                                    <!-- Mökin tietojen muokkaaminen -->
-                                                    <Button Text="Tallenna mökin tiedot"
-                                                            BorderWidth="5"
-                                                            BorderColor="Black"
-                                                            Clicked="TallennaMokki_Clicked"
-                                                            BackgroundColor="ForestGreen"
-                                                            CommandParameter="{Binding}" />
-                                                    
-                                                    
-                                                    <Button Text="Poista mökki"
-                                                            BorderWidth="5"
-                                                            BorderColor="Black"
-                                                            Clicked="PoistaMokki_Clicked"
-                                                            CommandParameter="{Binding}"
-                                                            BackgroundColor="LightSlateGray"/>
-                                                    
-                                                    
-                                                </VerticalStackLayout>
-                                            </Frame>
-                                        </DataTemplate>
-                                    </CollectionView.ItemTemplate>
-                                </CollectionView>
+
+        
+        <!-- OIKEA PUOLI NÄKYMÄSSÄ -->
+        
+        <ScrollView Grid.Column="1" BackgroundColor="OliveDrab">
+            <VerticalStackLayout Padding="20" Margin="5">
+
+                <CollectionView ItemsSource="{Binding HaettavatAlueet}">
+                    <CollectionView.ItemTemplate>
+
+                        <DataTemplate>
+
+                            <Frame BackgroundColor="Black" BorderColor="OliveDrab" Margin="5" Padding="20">
+                                <VerticalStackLayout Padding="10" Grid.Column="1" Spacing="5" >
+
+                                        
+
+                                        <!-- Alueiden tietojen muokkaaminen -->
+                                        <HorizontalStackLayout >
+
+                                        <Label Text="{Binding Nimi}" FontSize="20" Margin="10"/>
 
 
-                            </VerticalStackLayout>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+
+                                        <Entry Placeholder="Uusi nimi"
+                                               TextColor="Black"
+                                               BackgroundColor="WhiteSmoke"
+                                               x:Name="nimiEntry" />
 
 
-        </VerticalStackLayout>
-    </ScrollView>
+                                            <Button Text="Tallenna alueen nimi"
+                                                    BorderWidth="5"
+                                                    BorderColor="Black"
+                                                    Clicked="MuokkaaAlueNimea_Clicked"
+                                                    CommandParameter="{Binding}"
+                                                    BackgroundColor="DarkSlateGray"/>
 
+
+                                            <Button Text="Poista alue"
+                                                    BorderWidth="5"
+                                                    BorderColor="Black"
+                                                    Clicked="PoistaAlue_Clicked"
+                                                    CommandParameter="{Binding}" 
+                                                    BackgroundColor="LightSlateGray"/>
+
+
+                                            <!-- Mökkien lisääminen alueeseen -->
+                                            <Button Text="Lisää mökki"
+                                                    BorderWidth="5"
+                                                    BorderColor="Black"
+                                                    Clicked="LisaaMokki_Clicked"
+                                                    CommandParameter="{Binding}"
+                                                    BackgroundColor="ForestGreen"/>
+
+                                        </HorizontalStackLayout>
+
+
+                                    <!-- Alasvetovalikko alueet-->
+                                    <Button Text="{Binding ButtonTekstiVetovalikkoAlue}"
+                                                Clicked="AvaaSuljeAlue_Clicked"
+                                                CommandParameter="{Binding}"
+                                                BackgroundColor="Grey"
+                                                HorizontalOptions="End"/>
+
+                                    <VerticalStackLayout IsVisible="{Binding VetovalikkoAlue}" Spacing="5">
+
+                                        
+                                        
+                                        <!-- Mökkien tiedot -->
+                                    <CollectionView  ItemsSource="{Binding Mokit}" >
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                
+                                                <Frame BorderColor="Black" Padding="5" Margin="5" >
+                                                        <VerticalStackLayout Padding="10" BackgroundColor="DarkGreen">
+
+
+                                                            <HorizontalStackLayout>
+                                                                
+                                                                <Label Text="{Binding Mokkinimi}" FontSize="18" />
+                                                                
+                                                                <Button Text="{Binding ButtonTekstiVetovalikkoMokki}"
+                                                                        Clicked="AvaaSuljeMokki_Clicked"
+                                                                        CommandParameter="{Binding}"
+                                                                        BackgroundColor="Gray"
+                                                                        HorizontalOptions="End"/>
+                                                                
+                                                            </HorizontalStackLayout>
+
+                                                            <!-- Alasvetovalikko mökit -->
+                                                            <VerticalStackLayout IsVisible="{Binding VetovalikkoMokki}" Spacing="5">
+
+                                                                <!-- Mökin tiedot -->
+                                                                <Label Text="Mökin nimi" TextColor="Black"/>
+                                                                <Entry Text="{Binding Mokkinimi}" Placeholder="Mökin nimi" />
+
+                                                                <Label Text="Postinumero" TextColor="Black"/>
+                                                                <Entry Text="{Binding Postinumero}" Placeholder="Postinumero" />
+
+                                                                <Label Text="Katuosoite" TextColor="Black"/>
+                                                                <Entry Text="{Binding Katuosoite}" Placeholder="Katuosoite" />
+
+                                                                <Label Text="Hinta/vrk" TextColor="Black"/>
+                                                                <Entry Text="{Binding Hinta}" Placeholder="Hinta" Keyboard="Numeric" />
+
+                                                                <Label Text="Kuvaus" TextColor="Black"/>
+                                                                <Entry Text="{Binding Kuvaus}" Placeholder="Kuvaus" />
+
+                                                                <Label Text="Henkilömäärä" TextColor="Black"/>
+                                                                <Entry Text="{Binding Henkilomaara}" Placeholder="Henkilömäärä" Keyboard="Numeric" />
+
+                                                                <Label Text="Varustelu" TextColor="Black"/>
+                                                                <Entry Text="{Binding Varustelu}" Placeholder="Varustelu" />
+
+
+                                                                <!-- Mökin tietojen muokkaaminen -->
+                                                                <Button Text="Tallenna mökin tiedot"
+                                                                BorderWidth="5"
+                                                                BorderColor="Black"
+                                                                Clicked="TallennaMokki_Clicked"
+                                                                BackgroundColor="ForestGreen"
+                                                                CommandParameter="{Binding}" />
+
+
+                                                                <Button Text="Poista mökki"
+                                                                BorderWidth="5"
+                                                                BorderColor="Black"
+                                                                Clicked="PoistaMokki_Clicked"
+                                                                CommandParameter="{Binding}"
+                                                                BackgroundColor="LightSlateGray"/>
+
+
+                                                            </VerticalStackLayout>
+                                                        </VerticalStackLayout>
+                                                    </Frame>
+                                                
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                    </VerticalStackLayout>
+                                </VerticalStackLayout>
+                            </Frame>
+                            
+                        </DataTemplate>
+                        
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+    
 </ContentPage>

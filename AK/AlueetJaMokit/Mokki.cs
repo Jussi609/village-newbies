@@ -111,6 +111,27 @@ namespace AlueetJaMokit
             }
         }
 
+
+        //Vetovalikkoasetukset
+        private bool vetovalikkoMokki = false;
+        public bool VetovalikkoMokki
+        {
+            get => vetovalikkoMokki;
+            set
+            {
+                if (vetovalikkoMokki != value)
+                {
+                    vetovalikkoMokki = value;
+                    OnPropertyChanged(nameof (VetovalikkoMokki));
+                    OnPropertyChanged(nameof(ButtonTekstiVetovalikkoMokki));
+                }
+            }
+        }
+        public string ButtonTekstiVetovalikkoMokki =>
+        VetovalikkoMokki ? "Piilota tiedot" : "Näytä tiedot";
+
+
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

@@ -30,265 +30,265 @@
     <AppXManifest Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-11T08:02:28.125</Modified>
+      <Modified>2025-04-14T21:41:54.802</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-04-08T08:55:29.918</Modified>
+      <Modified>2025-04-14T21:00:07.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AlueetJaMokit.runtimeconfig.json">
       <PackagePath>AlueetJaMokit.runtimeconfig.json</PackagePath>
-      <Modified>2025-04-09T08:07:17.119</Modified>
+      <Modified>2025-04-14T13:53:33.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AlueetJaMokit.dll">
       <PackagePath>AlueetJaMokit.dll</PackagePath>
-      <Modified>2025-04-11T08:02:26.685</Modified>
+      <Modified>2025-04-14T21:41:54.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AlueetJaMokit.exe</PackagePath>
-      <Modified>2025-04-11T08:02:26.748</Modified>
+      <Modified>2025-04-14T21:41:54.346</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2025-04-03T22:22:26.256</Modified>
+      <Modified>2025-04-03T22:22:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2025-04-03T22:22:49.234</Modified>
+      <Modified>2025-04-13T09:08:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2025-04-03T22:22:49.247</Modified>
+      <Modified>2025-04-13T09:08:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2025-04-03T22:22:49.280</Modified>
+      <Modified>2025-04-13T09:08:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2025-04-03T22:22:49.316</Modified>
+      <Modified>2025-04-13T09:08:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2025-04-03T22:22:49.457</Modified>
+      <Modified>2025-04-13T09:08:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2025-04-03T22:22:26.198</Modified>
+      <Modified>2025-04-03T22:22:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2025-04-03T22:22:26.201</Modified>
+      <Modified>2025-04-03T22:22:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-04-03T22:22:51.265</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.253</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.253</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.253</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.248</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.248</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.260</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.260</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.260</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.260</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.260</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.263</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.263</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.262</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.262</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.262</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.265</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.265</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.265</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.265</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.264</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.264</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.264</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.263</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.264</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.263</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.257</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.255</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.255</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.255</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.255</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.258</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.258</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.257</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.257</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.257</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.260</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.260</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.258</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.258</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.258</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.254</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.254</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.254</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.254</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.253</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.248</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.248</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.248</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.248</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2025-04-03T22:22:51.248</Modified>
+      <Modified>2025-04-13T09:08:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AlueetJaMokit.deps.json">
       <PackagePath>AlueetJaMokit.deps.json</PackagePath>
-      <Modified>2025-04-09T08:07:16.946</Modified>
+      <Modified>2025-04-14T21:00:07.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -297,6 +297,14 @@
     <AppxPackagedFile Include="C:\Users\a-kr\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2024-10-14T22:26:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\a-kr\.nuget\packages\communitytoolkit.maui\5.3.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+      <Modified>2023-08-09T08:31:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\a-kr\.nuget\packages\communitytoolkit.maui.core\5.3.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+      <Modified>2023-08-09T08:31:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -433,6 +441,10 @@
     <AppxPackagedFile Include="C:\Users\a-kr\.nuget\packages\mysqlconnector\2.4.0\lib\net8.0\MySqlConnector.dll">
       <PackagePath>MySqlConnector.dll</PackagePath>
       <Modified>2024-11-12T12:50:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\a-kr\.nuget\packages\system.speech\7.0.0\runtimes\win\lib\net7.0\System.Speech.dll">
+      <PackagePath>System.Speech.dll</PackagePath>
+      <Modified>2022-10-18T16:18:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\.nuget\packages\microsoft.maui.controls.core\8.0.83\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>

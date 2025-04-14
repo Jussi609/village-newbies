@@ -1,4 +1,6 @@
-﻿namespace AlueetJaMokit
+﻿using MySqlConnector;
+
+namespace AlueetJaMokit
 {
     public partial class AppShell : Shell
     {
@@ -6,5 +8,8 @@
         {
             InitializeComponent();
         }
+
+
+
     }
 }

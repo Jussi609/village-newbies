@@ -7,9 +7,33 @@
     Shell.FlyoutBehavior="Disabled"
     Title="AlueetJaMokit">
 
-    <ShellContent
-        Title="Home"
+    <TabBar>
+
+        <ShellContent 
+            Title="Etusivu"
+            ContentTemplate="{DataTemplate local:Etusivu}"/>
+
+        <ShellContent
+            Title="Varaukset"/>
+
+
+        <ShellContent
+        Title="Alueet ja mökit"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+        
+        <ShellContent
+    Title="Lisäpalvelut"/>
+
+        
+            <ShellContent
+    Title="Asiakastiedot"/>
+
+        
+            <ShellContent
+    Title="Laskutus"/>
+
+    </TabBar>
 
 </Shell>
