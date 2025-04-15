@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlueetJaMokit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0ae43daf76d5537a12b6a526680e5d1043409382")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+d3e68e5bf52906dd0d2cf2ee7738ff310d18c972")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlueetJaMokit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlueetJaMokit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

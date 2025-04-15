@@ -8,7 +8,12 @@
     
     <VerticalStackLayout>
 
-            <Label 
+        <Label
+            BackgroundColor="Black"
+            Padding="50"/>
+        
+
+        <Label 
             Text="Siirry valikossa eri osiin"
                 FontSize="20"
             TextColor="Black"
@@ -16,6 +21,19 @@
             HorizontalOptions="CenterAndExpand"
             Padding="100"
             BackgroundColor="DarkOliveGreen"/>
+
+
+
+        <!-- Tietokantayhteyden onnistumisen testaus -->
+        <!-- Tämä poistuu lopullisesta versiosta -->
+        <Button x:Name="DatabaseBtn"
+        BorderWidth="5"
+        BorderColor="Black"
+        Text="Testaa tietokantayhteys"
+        Clicked="OnDatabaseClicked"
+                HorizontalOptions="Center"
+        BackgroundColor="Gray"/>
+
 
     </VerticalStackLayout>
 </ContentPage>

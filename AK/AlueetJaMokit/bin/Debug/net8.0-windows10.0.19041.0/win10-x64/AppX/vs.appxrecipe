@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-14T21:41:54.802</Modified>
+      <Modified>2025-04-15T07:37:36.451</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AlueetJaMokit.dll">
       <PackagePath>AlueetJaMokit.dll</PackagePath>
-      <Modified>2025-04-14T21:41:54.339</Modified>
+      <Modified>2025-04-15T07:37:35.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AlueetJaMokit.exe</PackagePath>
-      <Modified>2025-04-14T21:41:54.346</Modified>
+      <Modified>2025-04-15T07:37:35.163</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\a-kr\OneDrive\Desktop\Ohjelmistotuotanto\GitHUBprojekti\village-newbies\AK\AlueetJaMokit\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

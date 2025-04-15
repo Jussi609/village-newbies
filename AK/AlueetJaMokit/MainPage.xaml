@@ -12,16 +12,6 @@
         <VerticalStackLayout Padding="20" Grid.Column="0" BackgroundColor="DarkOliveGreen" Spacing="5">
 
 
-            <!-- Tietokantayhteyden onnistumisen testaus -->
-            <!-- Tämä poistuu lopullisesta versiosta -->
-            <Button x:Name="DatabaseBtn"
-        BorderWidth="5"
-        BorderColor="DarkOliveGreen"
-        Text="Testaa tietokantayhteys"
-        Clicked="OnDatabaseClicked"
-        HorizontalOptions="Fill"
-        BackgroundColor="Gray"/>
-
 
 
             <!-- Alueiden lisääminen -->
